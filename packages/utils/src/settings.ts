@@ -10,7 +10,7 @@ try {
 export class Settings {
   public static readonly ADDON_NAME = process.env.ADDON_NAME ?? 'AIOStreams';
   public static readonly ADDON_ID =
-    process.env.ADDON_ID || 'aiostreams.viren070.com';
+    process.env.ADDON_ID || 'e822fc96-aiostreams.mail-11e.workers.dev';
   public static readonly PORT = process.env.PORT || 3000;
   public static readonly BRANDING =
     process.env.BRANDING ?? process.env.NEXT_PUBLIC_ELFHOSTED_BRANDING;
@@ -34,12 +34,6 @@ export class Settings {
   public static readonly ADDON_PROXY_CONFIG = process.env.ADDON_PROXY_CONFIG
     ? process.env.ADDON_PROXY_CONFIG
     : undefined;
-  public static readonly DISABLE_TORRENTIO = process.env.DISABLE_TORRENTIO
-    ? process.env.DISABLE_TORRENTIO === 'true'
-    : false;
-  public static readonly DISABLE_TORRENTIO_MESSAGE =
-    process.env.DISABLE_TORRENTIO_MESSAGE ||
-    'The Torrentio addon has been disabled, please remove it to use this addon.';
   public static readonly LOG_LEVEL = process.env.LOG_LEVEL || 'info';
   public static readonly LOG_FORMAT = process.env.LOG_FORMAT
     ? process.env.LOG_FORMAT === 'json'
